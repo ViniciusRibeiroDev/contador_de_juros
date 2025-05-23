@@ -7,15 +7,11 @@ const calculadorDeJuros = (valorDaVenda) => {
         valorComJuros[i] = Number(valorDaVenda + ((valorDaVenda * (parcelas[i] + 1.65)) / 100)).toFixed(2)
     }
 
-    if (valorDaVenda >= 700) {
+    if (valorDaVenda >= 300) {
         valorComJuros[0] = valorDaVenda
         valorComJuros[1] = valorDaVenda
         valorComJuros[2] = valorDaVenda
         valorComJuros[3] = valorDaVenda
-    } else if (valorDaVenda >= 500) {
-        valorComJuros[0] = valorDaVenda
-        valorComJuros[1] = valorDaVenda
-        valorComJuros[2] = valorDaVenda
     } else if (valorDaVenda >= 200) {
         valorComJuros[0] = valorDaVenda
         valorComJuros[1] = valorDaVenda
