@@ -13,4 +13,4 @@ const parcelas = {
     11: 9.62, // parcela_12x
 }
 
- export default parcelas
+export default parcelas

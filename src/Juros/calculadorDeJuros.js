@@ -12,15 +12,11 @@ const calculadorDeJuros = (valorDaVenda) => {
         valorComJuros[1] = valorDaVenda
         valorComJuros[2] = valorDaVenda
         valorComJuros[3] = valorDaVenda
-    }
-
-    if (valorDaVenda >= 500) {
+    } else if (valorDaVenda >= 500) {
         valorComJuros[0] = valorDaVenda
         valorComJuros[1] = valorDaVenda
         valorComJuros[2] = valorDaVenda
-    }
-
-    if (valorDaVenda >= 200) {
+    } else if (valorDaVenda >= 200) {
         valorComJuros[0] = valorDaVenda
         valorComJuros[1] = valorDaVenda
     } else {
