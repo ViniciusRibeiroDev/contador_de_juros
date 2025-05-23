@@ -1,7 +1,7 @@
 const RenderizadorDeJuros = ({ totalComJuros, venda }) => {
     return <ul>
         {totalComJuros.map((elt, ind) => {
-            return <li>{ind + 1}x {(Number(elt) / (ind + 1)).toLocaleString('pt-br',
+            return <li key={ind}>{ind + 1}x {(Number(elt) / (ind + 1)).toLocaleString('pt-br',
                 {
                     style: 'currency',
                     currency: 'BRL'
