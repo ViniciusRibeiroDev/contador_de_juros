@@ -63,6 +63,9 @@ ul {
 
 input {
   padding: 0.6em 1.2em;
+  width: 250px;
+
+  margin-right: 5%;
 }
 
 li {
