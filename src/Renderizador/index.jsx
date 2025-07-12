@@ -1,3 +1,5 @@
+import jurosTotais from "../Juros/pedidosComJurosTotais"
+
 const RenderizadorDeJuros = ({ totalComJuros, venda }) => {
     return <ul>
         {totalComJuros.map((elt, ind) => {
@@ -9,7 +11,11 @@ const RenderizadorDeJuros = ({ totalComJuros, venda }) => {
                     {
                         style: 'currency',
                         currency: 'BRL'
-                    })} - {elt == venda ? "Sem Juros" : "Com Juros"}</li>
+                    })} - {elt == venda ? "Sem Juros" : "Com Juros"} {elt == venda ? "| " + jurosTotais(venda)[ind].toLocaleString('pt-br',
+                {
+                    style: 'currency',
+                    currency: 'BRL'
+                }) + " Com Juros" : ""}</li>
         })}
     </ul>
 }
