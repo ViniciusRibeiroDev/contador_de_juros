@@ -2,4 +2,4 @@
 
 Esse projeto foi criado no intuito de ajudar minha loja a fazer uma simulação das taxas de cartões de credito.
 
-Link: <a href="https://calculadoradeparcelaejuros.vercel.app/">Calculadora de juros</a>
+Link: <a target="blank" href="https://calculadoradeparcelaejuros.vercel.app/">Calculadora de juros</a>
